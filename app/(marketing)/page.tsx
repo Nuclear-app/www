@@ -313,7 +313,7 @@ const FeaturesSection = () => {
         {
           title: 'Smart Resource Generation',
           icon: FiCpu,
-          description: 'Instantly create summaries, flashcards, FAQs, real-world examples, and adaptive quizzes from any input - notes, PDFs, audio, or handwritten content.',
+          description: 'Instantly create summaries, flashcards, FAQs, real-world examples, and adaptive quizzes from any input. AI tracks your mistakes to create personalised learning paths.',
           variant: 'inline',
         },
         {
@@ -325,7 +325,7 @@ const FeaturesSection = () => {
         {
           title: 'Three Learning Modes',
           icon: FiTarget,
-          description: '"Just the Story!" for instant resources, "Story and Sword!" with comprehension checkpoints, "Death March" for distraction-free notetaking with LaTeX and markdown. Choose your own learning adventure.',
+          description: '"Just the Story!" for instant resources, "Story and Sword!" with comprehension checkpoints, "Death March" for distraction-free notetaking with LaTeX and markdown.',
           variant: 'inline',
         },
         {
@@ -335,33 +335,15 @@ const FeaturesSection = () => {
           variant: 'inline',
         },
         {
-          title: 'Adaptive Quizzes',
-          icon: FiSearch,
-          description: 'Duolingo-style quizzes that track mistakes and personalise future practice sessions based on your learning patterns.',
-          variant: 'inline',
-        },
-        {
-          title: 'Real-time Rendering',
-          icon: FiMonitor,
-          description: 'Backend supports real-time block rendering and fluid mode transitions with NovelEditor for a streamlined editing experience.',
-          variant: 'inline',
-        },
-        {
-          title: 'LaTeX & Markdown',
+          title: 'Advanced Notetaking',
           icon: FiType,
-          description: 'Full support for LaTeX equations, markdown formatting, tables, and images in distraction-free "Death March" mode.',
+          description: 'Full support for LaTeX equations, markdown formatting, tables, and images with real-time rendering and fluid mode transitions.',
           variant: 'inline',
         },
         {
           title: 'Comprehension Checkpoints',
           icon: FiLock,
           description: '"Story and Sword!" mode includes fill-in-the-blank checkpoints before unlocking full resources - ensuring understanding before revealing content.',
-          variant: 'inline',
-        },
-        {
-          title: 'Mistake Tracking',
-          icon: FiTrendingUp,
-          description: 'AI tracks your mistakes across quizzes and practice sessions to create personalised learning paths and targeted review materials.',
           variant: 'inline',
         },
       ]}
