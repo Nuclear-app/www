@@ -19,7 +19,7 @@ import {
   Link,
 } from '@chakra-ui/react'
 import { Br } from '@saas-ui/react'
-import type { Metadata, NextPage } from 'next'
+import type { NextPage } from 'next'
 import Image from 'next/image'
 import {
   FiArrowRight,
@@ -72,11 +72,6 @@ import { Pricing } from '#components/pricing/pricing'
 import { Em } from '#components/typography'
 import faq from '#data/faq'
 import pricing from '#data/pricing'
-
-export const meta: Metadata = {
-  title: 'Nuclear - AI-powered note-taking that teaches you',
-  description: 'Transform your notes into interactive learning experiences with AI-powered generation tools, multimodal input support, and three learning modes.',
-}
 
 const Home: NextPage = () => {
   return (
