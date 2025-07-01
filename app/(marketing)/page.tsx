@@ -257,9 +257,7 @@ const HighlightsSection = () => {
         </VStack>
       </HighlightsItem>
       <HighlightsItem title="Three Learning Modes">
-        <Text color="muted" fontSize="lg">
-          Nuclear adapts to your learning style with three distinct difficulty levels. Like a game, you choose your own path: <Em>"Just the Story!"</Em> for instant learning, <Em>"Story and Sword!"</Em> for guided comprehension, or <Em>"Death March"</Em> for deep focus.
-        </Text>
+
         <VStack alignItems="flex-start" spacing="4" mt="6">
           <Box>
             <Text fontWeight="bold" color="green.400">"Just the Story!" (Easy)</Text>
@@ -281,55 +279,7 @@ const HighlightsSection = () => {
           </Box>
         </VStack>
       </HighlightsItem>
-      <HighlightsTestimonialItem
-        name="Sarah Chen"
-        description="Medical Student"
-        avatar="/static/images/avatar.jpg"
-        gradient={['purple.700', 'purple.900']}
-      >
-        <Text color="gray.200" _dark={{ color: 'gray.700' }}>
-          "Nuclear transformed how I study. The adaptive quizzes actually help me understand concepts instead of just memorizing. The three learning modes let me choose the right intensity for each topic."
-        </Text>
-      </HighlightsTestimonialItem>
-      <HighlightsItem
-        colSpan={[1, null, 2]}
-        title="Built for modern learners"
-      >
-        <Text color="muted" fontSize="lg">
-          Nuclear supports all styles of note-taking and learning, from visual learners to audio processors, with seamless mode transitions and real-time block rendering.
-        </Text>
-        <Wrap mt="8">
-          {[
-            'text input',
-            'audio transcription',
-            'pdf import',
-            'handwriting ocr',
-            'thought-dumps',
-            'latex support',
-            'markdown',
-            'tables',
-            'images',
-            'adaptive quizzes',
-            'flashcards',
-            'faq generation',
-            'real-world examples',
-            'mistake tracking',
-            'personalised practice',
-            'comprehension checkpoints',
-            'distraction-free mode',
-          ].map((value) => (
-            <Tag
-              key={value}
-              variant="subtle"
-              colorScheme="purple"
-              rounded="full"
-              px="3"
-            >
-              {value}
-            </Tag>
-          ))}
-        </Wrap>
-      </HighlightsItem>
+
     </Highlights>
   )
 }
