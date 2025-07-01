@@ -9,6 +9,28 @@ const siteConfig = {
   seo: {
     title: 'Nuclear',
     description: 'AI-powered note-taking that teaches you',
+    openGraph: {
+      type: 'website',
+      locale: 'en_CA',
+      url: 'https://nuclearapp.ca',
+      site_name: 'Nuclear',
+      title: 'Nuclear',
+      description: 'AI-powered note-taking that teaches you',
+      images: [
+        {
+          url: 'https://nuclearapp.ca/static/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'Nuclear App',
+        },
+      ],
+    },
+    twitter: {
+      handle: '@nuclearapp',
+      site: '@nuclearapp',
+      cardType: 'summary_large_image',
+    },
+    titleTemplate: '%s | Nuclear',
   },
   termsUrl: '#',
   privacyUrl: '#',

@@ -108,9 +108,11 @@ const HeroSection: React.FC = () => {
               </FallInPlace>
             }
             description={
-              <FallInPlace delay={0.4} fontWeight="medium">
-                Nuclear transforms your notes into interactive learning experiences. 
-                Not just copy-paste, enforce comprehension before revealing answers.
+              <FallInPlace delay={0.4}>
+                <Text fontWeight="medium">
+                  Nuclear transforms your notes into interactive learning experiences. 
+                  Not just copy-paste, enforce comprehension before revealing answers.
+                </Text>
               </FallInPlace>
             }
           >
