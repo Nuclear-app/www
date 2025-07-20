@@ -1,5 +1,106 @@
+"use client";
+import { motion } from "framer-motion";
+import { useState } from "react";
+
 const Unis = () => {
-  return <div className="border-2 h-32 w-full">Unis</div>;
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const logoVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 20,
+      scale: 0.8
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      scale: 1
+    }
+  };
+
+  const tooltipVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 10,
+      scale: 0.9
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      scale: 1
+    }
+  };
+
+  const universities = [
+    { name: "McGill University", src: "/unis/mcgill.svg" },
+    { name: "University of Michigan", src: "/unis/umich.svg" },
+    { name: "National University of Singapore", src: "/unis/nus.svg" },
+    { name: "University of Toronto", src: "/unis/uoft.svg" },
+    { name: "Nanyang Technological University", src: "/unis/ntu.svg" },
+    { name: "University of Edinburgh", src: "/unis/edinburgh.svg" },
+    { name: "University of Waterloo", src: "/unis/waterloo.svg" },
+    { name: "University of Massachusetts", src: "/unis/umass.svg" },
+    { name: "Indiana University", src: "/unis/iu.svg" }
+  ];
+
+  return(
+    <div className="h-32 w-full flex flex-col gap-4 px-28">
+      <motion.div 
+        className="text-3xl text-center font-bold"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        Trusted by students from
+      </motion.div>
+      <motion.div 
+        className="flex flex-row gap-8 justify-between items-center"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {universities.map((uni, index) => (
+          <motion.div 
+            key={uni.name}
+            className="relative"
+            variants={logoVariants}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            whileHover={{ 
+              scale: 1.1,
+              transition: { duration: 0.2 }
+            }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => setHoveredIndex(index)}
+            onHoverEnd={() => setHoveredIndex(null)}
+          >
+            <img src={uni.src} alt={uni.name} className="h-16 w-auto" />
+            {hoveredIndex === index && (
+              <motion.div 
+                className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap pointer-events-none z-10"
+                variants={tooltipVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.2, ease: "easeOut" }}
+              >
+                {uni.name}
+              </motion.div>
+            )}
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  );
 };
 
 export default Unis;
