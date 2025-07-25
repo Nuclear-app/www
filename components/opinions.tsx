@@ -5,7 +5,7 @@ const Opinions = () => {
           Have opinions? We're all ears.
         </div> 
         <button className="bg-black text-white px-8 py-5 rounded-3xl text-4xl">
-          Reach Out -{">"} 
+          Reach Out {"->"} 
         </button>
     </div>
   );
