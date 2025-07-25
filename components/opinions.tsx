@@ -1,6 +1,6 @@
 const Opinions = () => {
   return (
-    <div className="py-28 w-full flex flex-col gap-4 items-start justify-center px-28">
+    <div className="py-28 w-full flex flex-col gap-4 items-start justify-center px-50">
         <div className="text-6xl font-bold text-center leading-tight">
           Have opinions? We're all ears.
         </div> 

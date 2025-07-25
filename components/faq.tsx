@@ -2,7 +2,7 @@ import Collapsible from './ui/collapsible';
 
 const Faq = () => {
   return (
-    <div className="w-full px-28 py-20 flex flex-row">
+    <div className="w-full px-50 py-20 flex flex-row">
       <div className="w=1/2 text-8xl text-wrap font-bold mb-12">Frequently Asked Questions</div>
       <div className="w-1/2 mx-auto space-y-4">
         <Collapsible title="What is Nuclear?">
