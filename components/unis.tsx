@@ -55,7 +55,7 @@ const Unis = () => {
   ];
 
   return(
-    <div className="h-32 w-full flex flex-col gap-4 px-50">
+    <div className="h-32 w-full flex flex-col gap-4 px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50">
       <motion.div 
         className="text-3xl text-center font-bold"
         initial={{ opacity: 0, y: -20 }}

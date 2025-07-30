@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const Opinions = () => {
   return (
-    <div className="py-16 w-full flex flex-col gap-6 items-start justify-center px-50">
+    <div className="py-16 w-full flex flex-col gap-6 items-start justify-center px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50">
         <div className="text-5xl font-bold text-center leading-tight">
           Have opinions? We're all ears.
         </div> 

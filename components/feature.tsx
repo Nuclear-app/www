@@ -8,7 +8,7 @@ interface FeatureProps {
 
 const Feature = ({ title, tag_img, tag, description, image }: FeatureProps) => {
   return (
-    <div className="w-full px-50">
+    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50">
       <img src={image} alt="Block" className="w-full h-auto" />
       <div className="flex flex-col gap-4 mt-8">
         <div className="flex flex-row gap-2 items-center">

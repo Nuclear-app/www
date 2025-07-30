@@ -42,7 +42,7 @@ const Hero = () => {
 
   return(
     <motion.div 
-      className="flex w-3/4 self-start px-50"
+      className="flex w-3/4 self-start px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

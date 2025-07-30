@@ -41,7 +41,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="w-full px-50 py-16">
+    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50 py-16">
       <div className="text-5xl font-bold mb-12">What people are saying</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (

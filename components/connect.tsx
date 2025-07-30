@@ -2,7 +2,7 @@ import { BookOpen, YoutubeIcon, Bell } from 'lucide-react';
 
 const Connect = () => {
   return (
-    <div className="w-full px-50 py-16">
+    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50 py-16">
       <div className="text-5xl font-bold mb-12">Connect with us</div>
       
       <div className="flex flex-row justify-between gap-6">
