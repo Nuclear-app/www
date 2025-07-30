@@ -18,22 +18,22 @@ const Collapsible: React.FC<CollapsibleProps> = ({
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className={`border-b border-black/30 p-10 mb-2 ${className}`}>
+    <div className={`border-b border-black/30 p-6 mb-1 ${className}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center p-4 bg-gray-50 hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
+        className="w-full flex items-center p-3 bg-gray-50 hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
       >
-        <div className=" text-4xl">
-          {isOpen ? <Minus size={24} /> : <Plus size={24} />}
+        <div className="text-2xl">
+          {isOpen ? <Minus size={20} /> : <Plus size={20} />}
         </div>
-        <span className="font-semibold text-4xl ml-10">{title}</span>
+        <span className="font-semibold text-md ml-6">{title}</span>
 
       </button>
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
           }`}
       >
-        <div className="p-4">
+        <div className="p-3">
           {children}
         </div>
       </div>

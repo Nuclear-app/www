@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   const containerVariants = {
@@ -41,7 +42,7 @@ const Hero = () => {
 
   return(
     <motion.div 
-      className="flex w-full md:w-1/2 self-start px-50"
+      className="flex w-3/4 self-start px-50"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -70,12 +71,12 @@ const Hero = () => {
           Students can transform their notes into interactive learning experiences with a distraction free, and clean, notetaking experience and AI tools.
         </motion.div>
         <motion.div 
-          className="text-xl flex flex-row gap-2 justify-start"
+          className="flex flex-row gap-4 justify-start"
           variants={buttonVariants}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <motion.button 
-            className="bg-black text-white hover:bg-gray-800 font-bold px-4 py-6 rounded-xl"
+            className="bg-black text-white hover:bg-gray-800 font-bold px-6 py-4 rounded-2xl text-lg"
             whileHover={{ 
               scale: 1.05,
               transition: { duration: 0.2 }
@@ -88,7 +89,7 @@ const Hero = () => {
             Try Nuclear Free
           </motion.button>
           <motion.button 
-            className="font-bold px-4 py-6 rounded-xl hover:bg-gray-200"
+            className="font-bold px-6 py-4 rounded-2xl text-lg flex items-center gap-2 transition-colors hover:bg-gray-100"
             whileHover={{ 
               scale: 1.05,
               backgroundColor: "#f3f4f6",
@@ -99,7 +100,7 @@ const Hero = () => {
               transition: { duration: 0.1 }
             }}
           >
-            Demo -&gt;
+            Demo <ArrowRight size={20} />
           </motion.button>
         </motion.div>
       </div>

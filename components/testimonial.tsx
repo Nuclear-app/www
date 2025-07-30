@@ -41,19 +41,19 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="w-full px-50 py-20">
-      <div className="text-8xl font-black  mb-16">What people are saying</div>
+    <div className="w-full px-50 py-16">
+      <div className="text-5xl font-bold mb-12">What people are saying</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#DDDDDD] rounded-2xl p-8 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between min-h-[400px]">
+          <div key={index} className="bg-[#DDDDDD] rounded-2xl p-6 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between min-h-[300px]">
             <div>
-              <p className="text-gray-700 leading-relaxed text-4xl mb-10">
+              <p className="text-gray-700 leading-relaxed text-lg mb-8">
                 "{testimonial.quote}"
               </p>
-              <div className="flex items-start justify-between mb-6">
+              <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-4xl font-semibold text-gray-900 mb-1">{testimonial.name}</h3>
-                  <p className="text-gray-600 text-2xl">{testimonial.major}</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{testimonial.name}</h3>
+                  <p className="text-gray-600 text-base">{testimonial.major}</p>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Testimonial = () => {
                 <img 
                   src={testimonial.university} 
                   alt="University" 
-                  className="w-20 h-20 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
             </div>
           </div>

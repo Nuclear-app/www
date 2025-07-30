@@ -1,44 +1,40 @@
 import Collapsible from './ui/collapsible';
 
 const Faq = () => {
+  const faqItems = [
+    {
+      title: "What makes Nuclear different from other note-taking apps?",
+      content: "Nuclear goes beyond passive note-taking by actively teaching you. It enforces comprehension before revealing answers, creates adaptive quizzes that track your mistakes, and supports multimodal input including audio, handwriting, and PDFs. Unlike traditional apps that just let you copy-paste, Nuclear ensures you actually understand the material."
+    },
+    {
+      title: "How do the three learning modes work?",
+      content: "'Just the Story!' provides instant resources like NotebookLM - upload your inputs and get all learning materials immediately. 'Story and Sword!' includes fill-in-the-blank checkpoints before unlocking full resources, ensuring comprehension. 'Death March' offers a distraction-free notetaking environment with LaTeX, markdown, and advanced features."
+    },
+    {
+      title: "What types of files can I import into Nuclear?",
+      content: "Nuclear supports text files, PDFs, audio recordings (with transcription), handwritten notes (with OCR), and free-form thought-dumps. The Pro plan includes advanced features like audio transcription and handwriting recognition."
+    },
+    {
+      title: "How does the adaptive quiz system work?",
+      content: "Nuclear creates quizzes based on your content and tracks your mistakes across sessions. It uses this data to personalize future practice sessions, focusing on areas where you struggle and adapting difficulty based on your performance."
+    },
+    {
+      title: "Is my data secure and private?",
+      content: "Absolutely. Nuclear uses enterprise-grade security with end-to-end encryption for your notes and learning data. We never share your personal information or content with third parties. Your learning journey stays private."
+    }
+  ];
+
   return (
-    <div className="w-full px-50 py-20 flex flex-row">
-      <div className="w=1/2 text-8xl text-wrap font-bold mb-12">Frequently Asked Questions</div>
-      <div className="w-1/2 mx-auto space-y-4">
-        <Collapsible title="What is Nuclear?">
-          <p className="text-2xl leading-relaxed">
-            Nuclear is an AI-powered learning platform that transforms your notes into interactive learning experiences. 
-            It provides a distraction-free, clean notetaking experience with advanced AI tools to help students learn more effectively.
-          </p>
-        </Collapsible>
-        
-        <Collapsible title="Is Nuclear free to use?">
-          <p className="text-2xl leading-relaxed">
-            Yes! Nuclear offers a free tier that includes core features for students to get started. 
-            We also offer premium plans with advanced AI features and unlimited storage for power users.
-          </p>
-        </Collapsible>
-        
-        <Collapsible title="How does the AI help with learning?">
-          <p className="text-2xl leading-relaxed">
-            Our AI analyzes your notes and creates interactive quizzes, flashcards, and study guides. 
-            It identifies key concepts, generates practice questions, and adapts to your learning style to help you retain information better.
-          </p>
-        </Collapsible>
-        
-        <Collapsible title="Can I use Nuclear on multiple devices?">
-          <p className="text-2xl leading-relaxed">
-            Absolutely! Nuclear syncs across all your devices - desktop, tablet, and mobile. 
-            Your notes and AI-generated content are always available wherever you are, ensuring seamless learning across all platforms.
-          </p>
-        </Collapsible>
-        
-        <Collapsible title="What subjects does Nuclear support?">
-          <p className="text-2xl leading-relaxed">
-            Nuclear works with any subject or topic. Whether you're studying math, science, history, literature, 
-            or any other subject, our AI adapts to help you learn and retain information effectively.
-          </p>
-        </Collapsible>
+    <div className="w-full px-50 py-16 flex flex-row gap-16">
+      <div className="w-1/2 text-5xl font-bold pt-8">Frequently Asked Questions</div>
+      <div className="w-1/2">
+        {faqItems.map((item, index) => (
+          <Collapsible key={index} title={item.title}>
+            <p className="text-base leading-relaxed">
+              {item.content}
+            </p>
+          </Collapsible>
+        ))}
       </div>
     </div>
   );
