@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Epilogue } from "next/font/google";
+import { Epilogue, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 const epilogue = Epilogue({
   variable: "--font-epilogue",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const ebGaramond = EB_Garamond({
+  variable: "--font-eb-garamond",
   subsets: ["latin"],
   display: "swap",
 });
@@ -23,11 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${epilogue.variable} antialiased`}
+        className={`${epilogue.variable} ${ebGaramond.variable} antialiased`}
       >
-        <Navbar />
+                {/* <div className="noise" /> */}
+
         {children}
-        <Footer />
       </body>
 
     </html>

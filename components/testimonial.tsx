@@ -45,20 +45,20 @@ const Testimonial = () => {
       <div className="text-5xl font-bold mb-12">What people are saying</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#DDDDDD] rounded-2xl p-6 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between min-h-[300px]">
+          <div key={index} className="bg-[#221D1D] rounded-4xl p-10 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between min-h-[300px]">
             <div>
-              <p className="text-gray-700 leading-relaxed text-lg mb-8">
+              <p className="leading-relaxed text-3xl mb-8 font-serif" style={{ fontFamily: 'var(--font-eb-garamond), serif' }}>
                 "{testimonial.quote}"
               </p>
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{testimonial.name}</h3>
-                  <p className="text-gray-600 text-base">{testimonial.major}</p>
+                  <h3 className="text-lg font-semibold mb-1">{testimonial.name}</h3>
+                  <p className="text-base">{testimonial.major}</p>
                 </div>
               </div>
             </div>
 
-            <div className="flex justify-start">
+            <div className="flex justify-start mt-20">
                 <img 
                   src={testimonial.university} 
                   alt="University" 

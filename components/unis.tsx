@@ -55,9 +55,9 @@ const Unis = () => {
   ];
 
   return(
-    <div className="h-32 w-full flex flex-col gap-4 px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50">
+    <div className="w-full flex flex-col gap-4 px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50 pb-20">
       <motion.div 
-        className="text-3xl text-center font-bold"
+        className="text-3xl text-center font-bold pb-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -84,10 +84,10 @@ const Unis = () => {
             onHoverStart={() => setHoveredIndex(index)}
             onHoverEnd={() => setHoveredIndex(null)}
           >
-            <img src={uni.src} alt={uni.name} className="h-16 w-auto" />
+            <img src={uni.src} alt={uni.name} className="h-22 w-auto" />
             {hoveredIndex === index && (
               <motion.div 
-                className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap pointer-events-none z-10"
+                className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-xs rounded-lg whitespace-nowrap pointer-events-none bg-[#221D1D] border-2 border-[#110C0C] text-[#eeeeee] px-4 py-2 text-md"
                 variants={tooltipVariants}
                 initial="hidden"
                 animate="visible"

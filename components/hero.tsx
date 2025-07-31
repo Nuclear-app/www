@@ -42,7 +42,7 @@ const Hero = () => {
 
   return(
     <motion.div 
-      className="flex w-3/4 self-start px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50"
+      className="flex py-25 self-center md:self-start px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50 mt-40"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -71,12 +71,15 @@ const Hero = () => {
           Students can transform their notes into interactive learning experiences with a distraction free, and clean, notetaking experience and AI tools.
         </motion.div>
         <motion.div 
-          className="flex flex-row gap-4 justify-start"
+          className="flex flex-col md:flex-row gap-4 justify-start"
           variants={buttonVariants}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <motion.button 
-            className="bg-black text-white hover:bg-gray-800 font-bold px-6 py-4 rounded-2xl text-lg"
+            className="bg-[#EEE] text-[#110C0C] hover:[#EEEEEE88] font-bold px-6 py-4 rounded-2xl text-lg"
+            onClick={() => {
+              window.open("/waitlist", "_blank");
+            }}
             whileHover={{ 
               scale: 1.05,
               transition: { duration: 0.2 }
@@ -86,13 +89,15 @@ const Hero = () => {
               transition: { duration: 0.1 }
             }}
           >
-            Try Nuclear Free
+            Join Waitlist
           </motion.button>
           <motion.button 
-            className="font-bold px-6 py-4 rounded-2xl text-lg flex items-center gap-2 transition-colors hover:bg-gray-100"
+            className="font-bold px-6 py-4 rounded-2xl text-lg flex items-center gap-2 transition-colors"
+            onClick={() => {
+              window.open("/waitlist", "_blank");
+            }}
             whileHover={{ 
               scale: 1.05,
-              backgroundColor: "#f3f4f6",
               transition: { duration: 0.2 }
             }}
             whileTap={{ 
@@ -100,7 +105,7 @@ const Hero = () => {
               transition: { duration: 0.1 }
             }}
           >
-            Demo <ArrowRight size={20} />
+            Launching Aug 5th <ArrowRight size={20} />
           </motion.button>
         </motion.div>
       </div>
