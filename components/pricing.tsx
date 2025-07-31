@@ -66,7 +66,7 @@ const Pricing = () => {
                 ))}
             </div>
 
-            <div className="text-3xl m-12 gap-1">Don't let a price tag stop you from learning!</div>
+            <div className="text-3xl m-12 ">Don't let a price tag stop you from learning!</div>
             <Link href="https://nuclearapp.ca/yourstory" className="text-3xl font-bold mb-12 text-[#9000FF] underline underline-offset-4 hover:text-[#B366FF] transition-colors">Reach out, tell us your story, and we'll get back to you</Link>
 
         </div>

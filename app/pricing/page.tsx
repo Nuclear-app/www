@@ -14,7 +14,7 @@ export default function Home() {
     <div className="">
       <Navbar />
       <div id="hero">
-        <Hero />
+        <Hero isPricingPage={true} />
       </div>
       <div id="universities">
         <Unis />
