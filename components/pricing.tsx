@@ -6,7 +6,7 @@ const Pricing = () => {
         {
             type: "Month",
             price: "$14",
-            currency: "CAD",
+            currency: "USD",
             duration: "per month",
             features: [
                 "Unlimited Blocks and Crates",
@@ -17,7 +17,7 @@ const Pricing = () => {
         {
             type: "Semester",
             price: "$49",
-            currency: "CAD",
+            currency: "USD",
             duration: "per semester (4 months)",
             features: [
                 "All Monthly features",
@@ -28,7 +28,7 @@ const Pricing = () => {
         {
             type: "Year",
             price: "$89",
-            currency: "CAD",
+            currency: "USD",
             duration: "per year",
             features: [
                 "All features",
@@ -67,7 +67,7 @@ const Pricing = () => {
             </div>
 
             <div className="text-3xl m-12 ">Don't let a price tag stop you from learning!</div>
-            <Link href="https://nuclearapp.ca/yourstory" className="text-3xl font-bold mb-12 text-[#9000FF] underline underline-offset-4 hover:text-[#B366FF] transition-colors">Reach out, tell us your story, and we'll get back to you</Link>
+            <Link href="/yourstory" className="text-3xl font-bold mb-12 text-[#9000FF] underline underline-offset-4 hover:text-[#B366FF] transition-colors">Reach out, tell us your story, and we'll get back to you</Link>
 
         </div>
     );

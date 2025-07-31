@@ -34,8 +34,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
-              <li><a href="#features" className=" transition-colors">Features</a></li>
-              <li><a href="#pricing" className=" transition-colors">Pricing</a></li>
+              <li><a href="/#features" className=" transition-colors">Features</a></li>
+              <li><a href="/pricing" className=" transition-colors">Pricing</a></li>
               <li><a href="#faq" className=" transition-colors">FAQ</a></li>
             </ul>
           </div>
