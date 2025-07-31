@@ -25,10 +25,10 @@ const Navbar = () => {
         
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center gap-8">
-          <Link href="#features" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
+          <Link href="/#features" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
             Features
           </Link>
-          <Link href="#pricing" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
+          <Link href="/pricing#pricing" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
             Pricing
           </Link>
           <Link href="/contact" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
