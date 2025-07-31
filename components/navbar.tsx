@@ -68,7 +68,7 @@ const Navbar = () => {
             Features
           </Link>
           <Link 
-            href="#pricing" 
+            href="/pricing" 
             className="block text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors py-2 w-full"
             onClick={closeMenu}
           >

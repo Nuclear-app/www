@@ -62,7 +62,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
               Join the thousands of students learning better with Nuclear.
             </motion.div>
             <motion.div 
-              className="text-lg"
+              className="text-xl"
               variants={itemVariants}
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{ 
