@@ -90,7 +90,7 @@ const Unis = () => {
             onHoverStart={() => setHoveredIndex(index)}
             onHoverEnd={() => setHoveredIndex(null)}
           >
-            <img src={uni.src} alt={uni.name} className="h-22 w-auto" />
+            <img src={uni.src} alt={uni.name} className="h-22 w-auto" loading="lazy" />
             {hoveredIndex === index && (
               <motion.div 
                 className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-xs rounded-lg whitespace-nowrap pointer-events-none bg-[#221D1D] border-2 border-[#110C0C] text-[#eeeeee] px-4 py-2 text-md"
@@ -128,7 +128,7 @@ const Unis = () => {
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
             >
-              <img src={uni.src} alt={uni.name} className="h-16 w-auto" />
+              <img src={uni.src} alt={uni.name} className="h-16 w-auto" loading="lazy" />
               {hoveredIndex === index && (
                 <motion.div 
                   className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-xs rounded-lg whitespace-nowrap pointer-events-none bg-[#221D1D] border-2 border-[#110C0C] text-[#eeeeee] px-4 py-2 text-md"
@@ -164,7 +164,7 @@ const Unis = () => {
               onHoverStart={() => setHoveredIndex(index + firstRow.length)}
               onHoverEnd={() => setHoveredIndex(null)}
             >
-              <img src={uni.src} alt={uni.name} className="h-16 w-auto" />
+              <img src={uni.src} alt={uni.name} className="h-16 w-auto" loading="lazy" />
               {hoveredIndex === index + firstRow.length && (
                 <motion.div 
                   className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-xs rounded-lg whitespace-nowrap pointer-events-none bg-[#221D1D] border-2 border-[#110C0C] text-[#eeeeee] px-4 py-2 text-md"
