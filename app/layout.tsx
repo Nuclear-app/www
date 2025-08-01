@@ -42,6 +42,9 @@ export default function RootLayout({
         <link rel="preload" href="/unis/waterloo.svg" as="image" type="image/svg+xml" />
         <link rel="preload" href="/unis/umass.svg" as="image" type="image/svg+xml" />
         <link rel="preload" href="/unis/iu.svg" as="image" type="image/svg+xml" />
+
+        {/* Rybbit Analytics */}
+        <script src="https://app.rybbit.io/api/script.js" data-site-id="1967" defer></script>
       </head>
       <body
         className={`${epilogue.variable} ${ebGaramond.variable} antialiased`}
