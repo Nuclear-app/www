@@ -42,7 +42,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
 
   return(
     <motion.div 
-      className={`flex py-5 px-5 mt-25 md:px-20 md:px-15 lg:px-30 xl:px-90
+      className={`flex py-5 px-5 mt-25 md:mt-50 md:px-20 md:px-15 lg:px-30 xl:px-90
         ${isPricingPage ? 'justify-center' : 'self-center md:self-start'}`}
       variants={containerVariants}
       initial="hidden"
