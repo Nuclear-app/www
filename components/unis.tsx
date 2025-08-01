@@ -59,7 +59,7 @@ const Unis = () => {
   const secondRow = universities.slice(Math.ceil(universities.length / 2));
 
   return(
-      <div className="w-full flex flex-col gap-4 px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90 pb-20">
+      <div className="w-full flex flex-col gap-4 px-4 sm:px-8 md:px-15 lg:px-30 xl:px-90 pb-20">
       <motion.div 
         className="text-3xl text-center font-bold pb-8"
         initial={{ opacity: 0, y: -20 }}
@@ -71,7 +71,7 @@ const Unis = () => {
       
       {/* Desktop layout - single row */}
       <motion.div 
-        className="hidden xl:flex flex-row w-full gap-8 justify-between items-center"
+        className="hidden xl:flex flex-row gap-8 justify-between items-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
