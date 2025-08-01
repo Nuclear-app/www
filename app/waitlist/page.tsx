@@ -1,12 +1,16 @@
-export default function WaitlistPage() {
+import Navbar from "@/components/navbar";
+
+export default function ContactPage() {
     return (
-      <iframe
+        <div className="min-h-screen bg-background overflow-hidden">    
+        <Navbar />
+        <iframe
         src="https://tally.so/r/wgVP8d"
         width="100%"
         height="100vh"
         style={{
           position: "fixed",
-          top: 64,
+          top: 75,
           left: 0,
           width: "100%",
           height: "100%",
@@ -16,6 +20,8 @@ export default function WaitlistPage() {
         }}
         allowFullScreen
       />
+
+        </div>
+
     );
   }
-  

@@ -17,8 +17,11 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Nuclear - AI for Learning",
+  title: "Nuclear. Learn Better.",
   description: "Transform your notes into interactive learning experiences with AI-powered tools.",
+  icons: {
+    icon: '/nuclear.svg',
+  },
 };
 
 export default function RootLayout({
