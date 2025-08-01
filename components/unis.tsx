@@ -71,7 +71,7 @@ const Unis = () => {
       
       {/* Desktop layout - single row */}
       <motion.div 
-        className="hidden xl:flex flex-row gap-8 justify-between items-center"
+        className="hidden xl:flex flex-row w-full gap-8 justify-between items-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
