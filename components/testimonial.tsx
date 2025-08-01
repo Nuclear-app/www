@@ -41,28 +41,28 @@ const Testimonial = () => {
   ];
 
   return (
-      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90 py-16">
-      <div className="text-5xl font-bold mb-12">What people are saying</div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="w-full px-4 sm:px-8 md:px-15 lg:px-30 xl:px-90 py-16">
+      <div className="text-4xl md:text-5xl font-bold mb-12"><h1>What people are saying</h1></div>
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#221D1D] rounded-4xl p-10 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between min-h-[300px]">
+          <div key={index} className="bg-[#221D1D] rounded-2xl md:rounded-4xl p-3 md:p-5 xl:p-5 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between min-h-[200px]">
             <div>
-              <p className="leading-relaxed text-2xl mb-8 font-serif" style={{ fontFamily: 'var(--font-eb-garamond), serif' }}>
+              <p className="text-sm md:text-lg mb-2 md:mb-6 font-serif" style={{ fontFamily: 'var(--font-eb-garamond), serif' }}>
                 "{testimonial.quote}"
               </p>
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-lg font-semibold mb-1">{testimonial.name}</h3>
-                  <p className="text-base">{testimonial.major}</p>
+                  <h3 className="text-xs md:text-sm font-semibold mb-1">{testimonial.name}</h3>
+                  <p className="text-xs md:text-sm">{testimonial.major}</p>
                 </div>
               </div>
             </div>
 
-            <div className="flex justify-start mt-20">
+            <div className="flex justify-start mt-5 md:mt-10 xl:mt-10">
                 <img 
                   src={testimonial.university} 
                   alt="University" 
-                  className="w-16 h-16 object-contain"
+                  className="w-8 h-8 md:w-16 md:h-16 object-contain"
                 />
             </div>
           </div>

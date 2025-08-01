@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="">
-      <div className="px-10 sm:px-8 md:px-16 lg:px-28 py-16">
+      <div className="px-5 sm:px-8 md:px-16 lg:px-28 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}

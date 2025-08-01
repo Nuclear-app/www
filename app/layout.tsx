@@ -18,7 +18,7 @@ const ebGaramond = EB_Garamond({
 
 export const metadata: Metadata = {
   title: "Nuclear. Learn Better.",
-  description: "Transform your notes into interactive learning experiences with AI-powered tools.",
+  description: "Learn better and smarter with Nuclear. Upload any file. Create flashcards and quizzes.",
   icons: {
     icon: '/nuclear.svg',
   },

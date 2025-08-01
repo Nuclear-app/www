@@ -42,16 +42,17 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
 
   return(
     <motion.div 
-      className={`flex py-25 px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90 mt-40 ${isPricingPage ? 'justify-center' : 'self-center md:self-start'}`}
+      className={`flex py-5 px-5 mt-25 md:mt-50 md:px-20 md:px-15 lg:px-30 xl:px-90
+        ${isPricingPage ? 'justify-center' : 'self-center md:self-start'}`}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <div className={`flex flex-col gap-10 ${isPricingPage ? 'text-center items-center' : 'text-left'}`}>
+      <div className={`flex flex-col gap-5 md:gap-10 ${isPricingPage ? 'text-center items-center' : 'text-left'}`}>
         {isPricingPage ? (
           <>
             <motion.div 
-              className="text-5xl font-bold leading-16"
+              className="text-2xl sm:text-4xl font-bold leading-tight sm:leading-normal"
               variants={itemVariants}
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{ 
@@ -59,10 +60,10 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
                 transition: { duration: 0.2 }
               }}
             >
-              Join the thousands of students <br /> learning better with Nuclear.
+              <h1>Join the thousands of students learning better with Nuclear.</h1>
             </motion.div>
             <motion.div 
-              className="text-xl"
+              className="text-md md:text-xl"
               variants={itemVariants}
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{ 
@@ -70,7 +71,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
                 transition: { duration: 0.2 }
               }}
             >
-              Let us help you fill the gap in education.
+              <h2>Let us help you fill the gap in education.</h2>
             </motion.div>
             <motion.div 
               className="w-full h-[0.5px] bg-white rounded-full"
@@ -81,7 +82,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
         ) : (
           <>
             <motion.div 
-              className="text-5xl font-bold text-left"
+              className="text-4xl md:text-5xl font-bold text-center md:text-left"
               variants={itemVariants}
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{ 
@@ -89,10 +90,10 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
                 transition: { duration: 0.2 }
               }}
             >
-              Nuclear is AI for learning.
+              <h1>Nuclear is AI for learning.</h1>
             </motion.div>
             <motion.div 
-              className="text-xl text-left"
+              className="text-md md:text-xl text-center md:text-left"
               variants={itemVariants}
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{ 
@@ -100,15 +101,15 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
                 transition: { duration: 0.2 }
               }}
             >
-              Students can transform their notes into interactive learning experiences with a distraction free, and clean, notetaking experience and AI tools.
+              <h2>Students can transform their notes into interactive learning experiences with a distraction free, and clean, notetaking experience and AI tools.</h2>
             </motion.div>
             <motion.div 
-              className="flex flex-col md:flex-row gap-4 justify-start"
+              className="flex flex-col md:flex-row gap-4 py-4 md:py-0 items-center md:items-start md:justify-start"
               variants={buttonVariants}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <motion.button 
-                className="bg-[#EEE] text-[#110C0C] hover:[#EEEEEE88] font-bold px-6 py-4 rounded-2xl text-lg"
+                className="bg-[#EEE] text-[#110C0C] hover:[#EEEEEE88] font-bold px-6 py-4 rounded-2xl text-lg w-fit"
                 onClick={() => {
                   window.open("/waitlist", "_blank");
                 }}
@@ -124,7 +125,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
                 Join Waitlist
               </motion.button>
               <motion.button 
-                className="font-bold px-6 py-4 rounded-2xl text-lg flex items-center gap-2 transition-colors"
+                className="font-bold px-6 py-4 rounded-2xl text-lg flex items-center gap-2 transition-colors w-fit"
                 onClick={() => {
                   window.open("/waitlist", "_blank");
                 }}

@@ -25,9 +25,9 @@ const Faq = () => {
   ];
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90 py-16 flex md:flex-row flex-col gap-16">
-      <div className="w-full md:w-1/2 text-5xl font-bold pt-8">Frequently Asked Questions</div>
-      <div className="w-full md:w-1/2">
+    <div className="w-full px-4 sm:px-8 md:px-15 lg:px-30 xl:px-90 py-16 flex md:flex-row flex-col">
+      <div className="w-full md:w-1/2 text-4xl md:text-5xl font-bold pt-8">Frequently Asked Questions</div>
+      <div className="w-full md:w-1/2 text-sm lg:text-md">
         {faqItems.map((item, index) => (
           <Collapsible key={index} title={item.title}>
             <p className="text-base">
