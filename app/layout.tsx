@@ -31,6 +31,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload university SVG files for better performance */}
+        <link rel="preload" href="/unis/mcgill.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/umich.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/nus.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/uoft.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/ntu.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/edinburgh.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/waterloo.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/umass.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/unis/iu.svg" as="image" type="image/svg+xml" />
+      </head>
       <body
         className={`${epilogue.variable} ${ebGaramond.variable} antialiased`}
       >
