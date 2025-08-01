@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,12 +20,13 @@ const Navbar = () => {
       <div className="noise" />
       <div className="flex items-center justify-between max-w-full">
         {/* Logo */}
+        <div className="hidden lg:flex gap-8 items-center">
         <Link href="/" className="text-3xl font-bold">
           Nuclear
         </Link>
-        
+
         {/* Desktop Navigation Links */}
-        <div className="hidden lg:flex items-center gap-8">
+        
           <Link href="/#features" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
             Features
           </Link>
@@ -32,18 +34,31 @@ const Navbar = () => {
             Pricing
           </Link>
           <Link href="/contact" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
-            Contact 
+            Contact
           </Link>
           <Link href="https://dev.nuclearapp.ca" target="_blank" className="text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors">
             Devlog
           </Link>
         </div>
-        
+
         {/* Desktop Sign Up Button */}
         <div className="hidden lg:block">
-          <Link href="/waitlist" className="bg-[#BF77F7] text-[#110C0C] px-4 py-2 text-lg font-bold rounded-2xl hover:shadow-xl transition-all duration-300 shadow-lg">
+          <motion.button
+            className="bg-[#BF77F7] text-[#110C0C] hover:[#EEEEEE88] font-bold px-4 py-2 rounded-xl text-md"
+            onClick={() => {
+              window.open("/waitlist", "_blank");
+            }}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.2 }
+            }}
+            whileTap={{
+              scale: 0.95,
+              transition: { duration: 0.1 }
+            }}
+          >
             Waitlist
-          </Link>
+          </motion.button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -60,38 +75,38 @@ const Navbar = () => {
       <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute top-full left-0 right-0 bg-background shadow-lg border-t border-gray-800 w-full`}>
         <div className="noise" />
         <div className="px-4 py-6 space-y-4 max-w-full">
-          <Link 
-            href="#features" 
+          <Link
+            href="#features"
             className="block text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors py-2 w-full"
             onClick={closeMenu}
           >
             Features
           </Link>
-          <Link 
-            href="/pricing" 
+          <Link
+            href="/pricing"
             className="block text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors py-2 w-full"
             onClick={closeMenu}
           >
             Pricing
           </Link>
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
             className="block text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors py-2 w-full"
             onClick={closeMenu}
           >
-            Contact 
+            Contact
           </Link>
-          <Link 
-            href="https://dev.nuclearapp.ca" 
-            target="_blank" 
+          <Link
+            href="https://dev.nuclearapp.ca"
+            target="_blank"
             className="block text-[#EEEEEEB3] hover:text-[#EEEEEE] transition-colors py-2 w-full"
             onClick={closeMenu}
           >
             Devlog
           </Link>
           <div className="pt-4 border-t border-gray-800">
-            <Link 
-              href="/waitlist" 
+            <Link
+              href="/waitlist"
               className="inline-block bg-[#BF77F7] text-[#110C0C] px-6 py-3 text-lg font-bold rounded-2xl hover:shadow-xl transition-all duration-300 shadow-lg"
               onClick={closeMenu}
             >

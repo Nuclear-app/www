@@ -41,13 +41,13 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50 py-16">
+      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90 py-16">
       <div className="text-5xl font-bold mb-12">What people are saying</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-[#221D1D] rounded-4xl p-10 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between min-h-[300px]">
             <div>
-              <p className="leading-relaxed text-3xl mb-8 font-serif" style={{ fontFamily: 'var(--font-eb-garamond), serif' }}>
+              <p className="leading-relaxed text-2xl mb-8 font-serif" style={{ fontFamily: 'var(--font-eb-garamond), serif' }}>
                 "{testimonial.quote}"
               </p>
               <div className="flex items-start justify-between mb-4">

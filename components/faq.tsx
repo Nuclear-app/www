@@ -25,7 +25,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50 py-16 flex md:flex-row flex-col gap-16">
+    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90 py-16 flex md:flex-row flex-col gap-16">
       <div className="w-full md:w-1/2 text-5xl font-bold pt-8">Frequently Asked Questions</div>
       <div className="w-full md:w-1/2">
         {faqItems.map((item, index) => (

@@ -42,7 +42,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
 
   return(
     <motion.div 
-      className={`flex py-25 px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50 mt-40 ${isPricingPage ? 'justify-center' : 'self-center md:self-start'}`}
+      className={`flex py-25 px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90 mt-40 ${isPricingPage ? 'justify-center' : 'self-center md:self-start'}`}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -51,7 +51,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
         {isPricingPage ? (
           <>
             <motion.div 
-              className="text-5xl font-bold"
+              className="text-5xl font-bold leading-16"
               variants={itemVariants}
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{ 
@@ -59,7 +59,7 @@ const Hero = ({ isPricingPage = false }: { isPricingPage?: boolean }) => {
                 transition: { duration: 0.2 }
               }}
             >
-              Join the thousands of students learning better with Nuclear.
+              Join the thousands of students <br /> learning better with Nuclear.
             </motion.div>
             <motion.div 
               className="text-xl"

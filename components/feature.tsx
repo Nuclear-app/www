@@ -17,8 +17,8 @@ const Feature = ({ title, tag_img, tag, description, image, gradientFrom = "#8B5
   };
   
   return (
-    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-28 xl:px-50">
-      <img src={image} alt="Block" className="w-full h-auto" />
+    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-90 xl:px-90">
+      <img src={image} alt="Block" className="w-full mx-auto h-auto" />
       <div className="flex flex-col mt-5">
         <div className="flex flex-row gap-2 items-center">
           <img src={tag_img} alt="Tag" className="w-7 h-7 sm:w-7 sm:h-7" />
