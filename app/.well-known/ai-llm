@@ -1,0 +1,8 @@
+{
+  "ai_access": {
+    "gptbot": "allow",
+    "claude": "allow",
+    "perplexity": "allow",
+    "any": "allow"
+  }
+}

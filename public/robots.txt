@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Sitemap: https://nuclearapp.ca/sitemap.xml (uncomment when available)
