@@ -45,7 +45,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><a href="https://dev.nuclearapp.ca" target="_blank" className=" transition-colors">Devlog</a></li>
-              <li><a href="https://app.dover.com/jobs/nuclearapp" target="_blank" className=" transition-colors">Careers</a></li>
+              <li><a href="https://app.dover.com/jobs/nuclear" target="_blank" className=" transition-colors">Careers</a></li>
               <li><a href="/contact" className=" transition-colors">Support</a></li>
               {/* <li><a href="#" className=" transition-colors">Press Kit</a></li> */}
             </ul>
