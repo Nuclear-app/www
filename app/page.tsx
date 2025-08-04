@@ -23,7 +23,7 @@ export default function Home() {
           title="Multi-modal input"
           tag="Zero Distractions"
           tag_img="/zero-dist-tag.svg"
-          description="Drag in any type of file, and we'll transcribe, OCR, convert it and generate notes that actually help you."
+          description="Drag in any type of file, and we'll parse, convert it and generate notes that actually help you."
           image="/upload.png"
           gradientFrom="#78E0D5"
           gradientTo="#A996ED"
