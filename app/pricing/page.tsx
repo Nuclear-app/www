@@ -8,10 +8,22 @@ import Opinions from "@/components/opinions";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Pricing from "@/components/pricing";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <div className="">
+      {/* Google Analytics - Additional tracking for pricing page */}
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-568MF8KE7Q" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-568MF8KE7Q');
+        `}
+      </Script>
+      
       <Navbar />
       <div id="hero">
         <Hero isPricingPage={true} />

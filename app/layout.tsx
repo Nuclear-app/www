@@ -43,6 +43,33 @@ export default function RootLayout({
         <link rel="preload" href="/unis/umass.svg" as="image" type="image/svg+xml" />
         <link rel="preload" href="/unis/iu.svg" as="image" type="image/svg+xml" />
 
+        {/* Microsoft Clarity Analytics */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "ssq78uoqmx");
+            `,
+          }}
+        />
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-568MF8KE7Q"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-568MF8KE7Q');
+            `,
+          }}
+        />
+
         {/* Rybbit Analytics */}
         <script src="https://app.rybbit.io/api/script.js" data-site-id="1967" defer></script>
       </head>
