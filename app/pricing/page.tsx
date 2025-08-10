@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <div className="">
       {/* Google Analytics - Additional tracking for pricing page */}
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-568MF8KE7Q" />
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-H0KRK6CNT7" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-568MF8KE7Q');
+          gtag('config', 'G-H0KRK6CNT7');
         `}
       </Script>
       
